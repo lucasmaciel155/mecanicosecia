@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Mecânicos e Cia - Cadastro</title>
+    <script>
+        function vaiprincipal() {
+   const value = document.getElementById('email').value;
+   if (value.trim() === '') {
+     alert('Preencha o e-mail');
+   } else {
+     const encodedValue = encodeURIComponent(value);
+     const newUrl = `principal.html?email=${encodedValue}`;
+
+     window.location.replace(newUrl);
+   }
+ }
+     </script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="imagem">
+            <img src="logolucas.jpg">
+        </div>
+        <div class="principal">
+            <div class="formulario">
+                <h2>Login</h2>
+                <form>
+                    <div class="dados">
+                        <span>Nome</span>
+                        <input type="text" placeholder="nome">
+                    </div>
+
+                    <div class="dados">
+                        <span>Nascimento</span>
+                        <input type="number" placeholder="dd / mm / aaaa">
+                    </div>
+
+                    <div class="dados">
+                        <span>E-mail para Login</span>
+                        <input type="email" placeholder="seuemail@email.com" id="email">
+                    </div>
+
+                    <div class="dados">
+                        <span>Senha para Login</span>
+                        <input type="password" placeholder="senha">
+                    </div>
+
+                    <div class="dados">
+                        <input type="submit" value="Criar" onclick="vaiprincipal(document.getElementById('email').value)">
+                    </div>
+
+                    <div class="dados">
+                        <p>Já Tem Uma Conta? <a href="login.html">Logar</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

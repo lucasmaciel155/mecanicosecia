@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.main{
+    margin-left: 300px;
+    transition: margin-left .5s; 
+    padding: 20px;
+
+}
+.barrapesquisa{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #1B1F3B;
+        font-size: 16px;
+    width: 100%;
+    color: white;
+    border: none;
+}
+.txt{
+    background-color: #1B1F3B;
+    display: flex;
+    flex:1;
+    flex-direction: row;
+    border-radius: 20px;
+}
+.resp{
+    width: 100%;
+    font-size: 12px;
+    border-radius: 10px;
+    padding-left: 10px;
+    line-height: 20px;
+    background-color: #44509F;
+    border: none;
+}
+.resp::placeholder{
+    font-size: 12px;
+        color: #aaa;
+}
+.comentario{
+    color:white;
+    padding: 20px;
+}
+.barrapesquisa::placeholder{
+    font-size: 16px;
+        color: #aaa;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  .avatar-container {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/266/266033.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .avatar-container1 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("img/image\ 30.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .avatar-container2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("img/image\ 31.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .avatar-container3 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("img/image\ 32.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  .usern{
+    color: white;
+    padding-top: 10px;
+  }
+  .follower{
+    color: white;
+  }
+.menuitem{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .floating-button a {
+    display: block;
+    background-color: #293DC9;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+  }
+
+  
+  .floating-button a:hover {
+    background-color: #0062cc;
+  }
+.sidebar {
+    height: 100%;
+    width: 300px; 
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: #1B1F3B; 
+    overflow-x: hidden; 
+    padding-top: 5px; 
+    transition: 0.5s; 
+  }
+  .notification {
+    position: relative;
+    display: inline-block;
+  }
+
+  .notification .fa-bell {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .notification .fa-sign-out-alt {
+    font-size: 24px;
+    color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+  .notification .fa-user-circle {
+    font-size: 24px;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    
+  }
+  .notification .fa-bell {
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+  .notification .fa-times-circle {
+    font-size: 24px;
+    color: white;
+  }
+  .notification .fa-times-circle {
+    margin-top: 4px;
+    margin-right: 4px;
+  }
+
+
+
+.imagem {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(231, 112, 0);
+    padding: 20px;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.principal .formulario {
+    width: 50%;
+}
+
+.principal .formulario h2 {
+    color: rgb(231, 112, 0);
+    font-weight: 600;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.principal .formulario .dados {
+    margin-bottom: 20px;
+}
+
+.principal .formulario .dados input {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    font-weight: 400;
+    border: none;
+    font-size: 17px;
+    color: black;
+    background-color: #ecf2f7;
+    border-radius: 5px;
+}
+
+.principal .formulario .dados input[type=submit] {
+    background: rgb(231, 112, 0);
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.principal .formulario .dados input[type=submit]:hover {
+    background: rgb(212, 103, 1);
+}
+
+.principal .formulario .dados button {
+    background-color: rgb(212, 103, 1);
+    color: white;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: large;
+    border: none;
+    margin-left: 140px;
+}
+
+.principal .formulario .dados button:hover {
+    background-color: black;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Mecânicos e Cia - Login</title>
+    <script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "300px";
+  document.getElementById("main").style.marginLeft = "300px";
+  document.getElementById("colli").style.visibility = "hidden";
+  document.getElementById("busca").style.paddingLeft="0px";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("colli").style.visibility = "visible";
+  document.getElementById("busca").style.paddingLeft="10px";
+}
+    </script>
+</head>
+
+<body style="background-color: #373D68">
+    <div id="mySidebar" class="sidebar">
+        <div style="display: flex;flex-direction: row;justify-content:space-between;width: 100%; padding-left: 20px;padding-right: 20px;">
+            <a href="#" class="notification">
+                <i class="fa fa-bell"></i>
+              </a>
+              <a  href="javascript:void(0)" class="notification" onclick="closeNav()">
+                
+                <i class="fa fa-times-circle"></i>
+              </a>
+
+         </div>   
+            <div class="avatar-container"></div>
+         
+        <div>
+         <h3 class="usern" id="usern">Nome do Usuário</h3>
+        </div>
+        <div style="justify-content: space-between; display: flex; flex:row">
+            <div><p class="follower" style="padding-right: 20px;">1 Seguidores</p></div>
+            <div><p class="follower">0 Seguindo</p></div>
+        </div>
+        <div style="display:flex;flex-direction: column;align-items: center; padding-top: 100px;">      
+        
+        <a href="#" class="menuitem">Perfil</a>
+        <a href="#" class="menuitem">Início</a>
+        <a href="#" class="menuitem">Configurações</a>
+    </div>
+    <div style="display:flex;flex-direction: column;align-items: center; padding-top: 100px;">      
+        
+        <a href="login.html" class="menuitem" style="color:red">Sair</a>
+    </div>
+      </div>
+      
+      <div id="main" style="margin-left: 300px;">
+        <div style="display:flex; flex-direction: row;width: 100%;padding: 20px;">
+            <a id="colli"  href="javascript:void(0)" class="notification" onclick="openNav()">  
+                <i class="fa fa-sign-out-alt"></i>
+              </a>
+        <input id="busca" type="text" placeholder="Pesquise algo aqui..." class="barrapesquisa">
+        <a  href="#" class="notification">  
+            <i class="fa fa-user-circle"></i>
+          </a>
+        </div>
+        <div id="conversas" style="padding-left:80px;padding-right: 150px;display: flex;flex-direction: column;">
+            <div>
+            <div class="txt">
+                <div id="avat1">
+                    <div class="avatar-container1"></div>
+                </div>
+                <div class="comentario">
+                    <h3 style="text-decoration: underline;padding-bottom: 5px;">Rodrigo Moraes</h3>
+                    <p>Gente, ando tendo dificuldades em desenvolver um design para uma concept art. Alguém sabe aonde eu poderia pegar inspiração?</p>
+                </div>
+             </div>
+             <input type="text" placeholder="Digite uma resposta..." class="resp"> 
+             </div>
+             <div style="background-color: #1B1F3B;padding-left:80px;padding-right: 150px;width: 100%;height: 3px; margin-top: 30px;margin-bottom: 30px;"></div>
+        </div>
+        <div id="conversas" style="padding-left:80px;padding-right: 150px;display: flex;flex-direction: column;">
+            <div>
+            <div class="txt">
+                <div id="avat1">
+                    <div class="avatar-container2"></div>
+                </div>
+                <div class="comentario">
+                    <h3 style="text-decoration: underline;padding-bottom: 5px;">Renata Pereira</h3>
+                    <p>Caramba o bloqueio criativo veio com tudo, não estou conseguindo desenhar nada. Quando isso aconteceu com vocês, o que vocês fizeram para fazer isso passar??</p>
+                </div>
+             </div>
+             <input type="text" placeholder="Digite uma resposta..." class="resp"> 
+             </div>
+             <div style="background-color: #1B1F3B;padding-left:80px;padding-right: 150px;width: 100%;height: 3px; margin-top: 30px;margin-bottom: 30px;"></div>
+             
+        </div>
+        <div id="conversas" style="padding-left:80px;padding-right: 150px;display: flex;flex-direction: column;">
+            <div>
+            <div class="txt">
+                <div id="avat1">
+                    <div class="avatar-container3"></div>
+                </div>
+                <div class="comentario">
+                    <h3 style="text-decoration: underline;padding-bottom: 5px;">Giovanna Reichert</h3>
+                    <p>Gente, ando tendo dificuldades em desenvolver um design para uma concept art. Alguém sabe aonde eu poderia pegar inspiração?</p>
+                </div>
+             </div>
+             <input type="text" placeholder="Digite uma resposta..." class="resp"> 
+             </div>
+             
+        </div>
+            
+
+
+      </div>
+      <div class="floating-button">
+        <a href="#"><i class="fa fa-pencil-alt"></i></a>
+      </div>
+      <script>
+		const searchParams = new URLSearchParams(window.location.search);
+		const value = searchParams.get('email');
+
+		const displayDiv = document.getElementById('usern');
+		displayDiv.innerText = value;
+	</script>
+</body>
+
+</html>
