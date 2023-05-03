@@ -123,9 +123,9 @@ function closeNav() {
       <script>
 		const searchParams = new URLSearchParams(window.location.search);
 		const value = searchParams.get('email');
-
+        const decodedValue = decodeURIComponent(value;  
 		const displayDiv = document.getElementById('usern');
-		displayDiv.innerText = value;
+		displayDiv.innerText = decodedValue;
 	</script>
 </body>
 
